@@ -1,0 +1,21 @@
+"""
+%INSTRUCTIONS:
+Your task is to construct a knowledge graph based on the provided competency question answers and ontology. Focus on extracting key entities, relationships, and concepts from the answers and mapping them to the ontology. Do not create additional entities or make up answers.
+
+%Example knowledge graph format:
+Follow the exact format for the knowledge graph in ttl:
+@prefix wqsen: https://w3id.org/wqsensor# .
+@prefix owl: http://www.w3.org/2002/07/owl# .
+@prefix rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# .
+@prefix xml: http://www.w3.org/XML/1998/namespace .
+@prefix xsd: http://www.w3.org/2001/XMLSchema# .
+@prefix rdfs: http://www.w3.org/2000/01/rdf-schema# .
+
+wqsen:WaterQualitySensor1 rdf:type wqsen:Sensor .
+wqsen:WaterQualitySensor1 wqsen:hasAccuracy wqsen:Accuracy1 .
+wqsen:Accuracy1 rdf:type wqsen:Accuracy .
+wqsen:Accuracy1 rdfs:label '...' .
+
+Below are the competency questions and answers:
+
+"""
